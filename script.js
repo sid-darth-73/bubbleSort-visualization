@@ -48,8 +48,8 @@ function animate(moves) {
     if(move.type == "swap") {
         [arr[i], arr[j]] = [arr[j], arr[i]];
     }
-    playNote(30 + arr[i] * 1300);
-    playNote(30 + arr[j] * 1300);
+    playNote(300 + arr[i] * 900);
+    playNote(300 + arr[j] * 900);
     showBars(move);
     setTimeout(function() {
         animate(moves);
@@ -61,7 +61,7 @@ function bubbleSort(arr) {
     do{
         var swapped = false;
         for(let i = 0; i<arr.length; i++) {
-            moves.push({ indices : [i-1,i], type : "compare"}); // comment out this line to avoid rest comparisions
+            //moves.push({ indices : [i-1,i], type : "compare"}); // comment out this line to avoid rest comparisions
             if(arr[i-1] > arr[i]) {
                 swapped = true;
                 moves.push({indices : [i-1,i], type : "swap"});

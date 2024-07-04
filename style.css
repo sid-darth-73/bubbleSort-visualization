@@ -1,5 +1,5 @@
 #container {
-    height: 200px;
+    height: 400px;
     display: flex;
     align-items: flex-end;
 }
@@ -11,7 +11,7 @@ body {
 }
 
 .bar {
-    width: 10px;
+    width: 40px;
     background-color: black;
     margin: 1px;
 }
