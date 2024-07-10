@@ -61,7 +61,7 @@ function bubbleSort(arr) {
     do{
         var swapped = false;
         for(let i = 0; i<arr.length; i++) {
-            //moves.push({ indices : [i-1,i], type : "compare"}); // comment out this line to avoid rest comparisions
+            //moves.push({ indices : [i-1,i], type : "compare"}); // comment out this line to avoid rest comparisons
             if(arr[i-1] > arr[i]) {
                 swapped = true;
                 moves.push({indices : [i-1,i], type : "swap"});
